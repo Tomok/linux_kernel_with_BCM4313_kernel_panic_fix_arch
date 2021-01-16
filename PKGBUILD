@@ -1,7 +1,7 @@
 # Maintainer of parent package: Jan Alexander Steffens (heftig) <heftig@archlinux.org>
 # Maintainer: Thomas Lahmer <791550+Tomok@users.noreply.github.com>
 
-pkgbase=linux
+pkgbase=linux-brcmsmac-window-size-fixed
 pkgver=5.10.7.arch1
 pkgrel=1
 pkgdesc='Linux'
