@@ -1,4 +1,5 @@
-# Maintainer: Jan Alexander Steffens (heftig) <heftig@archlinux.org>
+# Maintainer of parent package: Jan Alexander Steffens (heftig) <heftig@archlinux.org>
+# Maintainer: Thomas Lahmer <791550+Tomok@users.noreply.github.com>
 
 pkgbase=linux
 pkgver=5.10.7.arch1
