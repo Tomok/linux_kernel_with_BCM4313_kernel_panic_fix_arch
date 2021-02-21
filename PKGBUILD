@@ -2,7 +2,7 @@
 # Maintainer: Thomas Lahmer <791550+Tomok@users.noreply.github.com>
 
 pkgbase=linux-brcmsmac-window-size-fixed
-pkgver=5.10.7.arch1
+pkgver=5.11.arch2
 pkgrel=1
 pkgdesc='Linux'
 _srctag=v${pkgver%.*}-${pkgver##*.}
@@ -27,7 +27,7 @@ validpgpkeys=(
   'A2FF3A36AAA56654109064AB19802F8B0D70FC30'  # Jan Alexander Steffens (heftig)
 )
 sha256sums=('SKIP'
-            'd3e7adf5fcfc632887058ca84ca7b849a824dda5a03de854c8d3480ef0124ad1'
+            'd8d5d11c80424985642b0eea6ace3256b5a1e5e69d637104523460a5ebdda202'
             '75cac79d9ab2a982833f48a68cae267c3e25b20cd079afb776f17295a9d104f4')
 
 export KBUILD_BUILD_HOST=archlinux
@@ -93,6 +93,7 @@ _package() {
 
 _package-headers() {
   pkgdesc="Headers and scripts for building modules for the $pkgdesc kernel"
+  depends=(pahole)
 
   cd $_srcname
   local builddir="$pkgdir/usr/lib/modules/$(<version)/build"
